@@ -9,7 +9,7 @@ a {
 
 a:hover{
     text-decoration: underline;
-    transition: ease-in-out 200ms;
+    transition: ease-in-out 2000ms;
 }
 .container {
     margin: 120px auto;
@@ -32,6 +32,7 @@ form {
     background-color: white;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.00);
     border-radius: 10px;
+    border-right: 3px solid #596e79;
     display: flex;
     margin-bottom: 30px;
 }
