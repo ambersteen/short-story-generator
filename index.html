@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Special+Elite&display=swap" rel="stylesheet">
@@ -12,11 +13,11 @@
 <body>
     <div class="container">
     <header>
-    <h1>Welcome to my Short-story Generator</h1>
+    <h1>AI Short-story Generator</h1>
     </header>
 
 <main>
-<form>
+<form id="story-generator-form">
     <input type="text" placeholder="Enter a topic or key word to genertate a short story" 
     autofocus 
     required 
@@ -25,15 +26,7 @@
     /> 
     <input type="submit" class="submit-button"/>
 </form>
-<div class="story">
- 
-    In the heart of the misty moors, perched atop a rugged cliff, stood Castle Blackthorn, its ancient stones weathered by centuries of time. 
-    Within its walls, whispered legends spoke of a cursed king whose spirit wandered the halls, seeking redemption. Brave souls dared not venture near, 
-    for the castle's shadow seemed to swallow the very light, casting an ominous pall over the land. 
-    Yet, beneath its somber facade lay secrets waiting to be unearthed by those bold enough to defy the darkness and unravel the mysteries that shrouded 
-    Castle Blackthorn in myth and legend.
-    <br />
-</div>
+<div class="story" id="story"></div>
 </main>
 
     <footer>
