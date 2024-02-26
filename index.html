@@ -14,12 +14,13 @@
 <body>
     <div class="container">
     <header>
-    <h1>AI Short-story Generator</h1>
+    <h1>AI Short Story Generator</h1>
     </header>
 
 <main>
+    <div class="form-container">
 <form id="story-generator-form">
-    <input type="text" placeholder="Enter a topic or key word to genertate a short story" 
+    <input type="text" placeholder="Enter a topic or key word to generate a short story" 
     autofocus 
     required 
     autocomplete="off"
@@ -28,7 +29,9 @@
     /> 
     <input type="submit" class="submit-button"/>
 </form>
-<div class="story" id="story"></div>
+<div class="hint">i.e: Castle, Forest, Knight</div>
+</div>
+<div class="story hidden" id="story"></div>
 </main>
 
     <footer>
