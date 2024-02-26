@@ -5,11 +5,13 @@ body {
 a {
     color: #596e79;
     text-decoration: none;
+    transition: ease-in-out 200ms;
 }
 
 a:hover{
+    color: #c7b198;
     text-decoration: underline;
-    transition: ease-in-out 2000ms;
+
 }
 .container {
     margin: 120px auto;
@@ -40,6 +42,7 @@ border-radius: 10px;
 form {
   display: flex;
 }
+
 .hint {
     line-height: 2px;
     font-size: 12px;
@@ -64,6 +67,12 @@ form {
     font-size: 16px;
     border-radius: 50px;
     padding: 14px 24px;
+    transition: ease-in-out 200ms;
+}
+.submit-button:hover {
+    background: #c7b198;
+    color: white;
+
 }
 .story {
     font-size: 16px;
