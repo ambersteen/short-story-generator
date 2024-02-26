@@ -1,6 +1,4 @@
 function displayStory(response) {
-
-    console.log("story generated");
     new Typewriter("#story", {
   strings: response.data.answer,
   autoStart: true,
@@ -22,11 +20,7 @@ let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${
 let storyElement = document.querySelector("#story");
 storyElement.classList.remove("hidden");
 storyElement.innerHTML =
-  `Generating story for you about ${instructionsInput.value}`;
-
-console.log("generating story");
-console.log(`prompt: ${prompt}`);
-console.log(`context: ${context}`);
+  `Generating story for you about ${instructionsInput.value}...`;
 
 axios.get(apiURL).then(displayStory);
 }
